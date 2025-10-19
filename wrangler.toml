@@ -1,4 +1,4 @@
-name = "coachsite"
+name = "coachingwebsite"
 main = "src/entry.py"
 compatibility_date = "2024-03-20"
 compatibility_flags = ["python_workers"]
