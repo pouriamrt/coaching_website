@@ -1,0 +1,8 @@
+[project]
+name = "coachsite"
+version = "0.2.0"
+description = "Coaching website on Cloudflare Python Workers with D1 + KV"
+requires-python = ">=3.11"
+
+[tool.pyright]
+typeCheckingMode = "basic"

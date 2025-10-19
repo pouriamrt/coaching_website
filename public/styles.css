@@ -1,0 +1,41 @@
+:root {
+  --bg: #4f698c;
+  --fg: #e9edf1;
+  --muted: #9fb0c3;
+  --brand: #68a0ff;
+  --brand-ink: #0d1b2a;
+  --card: #10141a;
+  --stroke: #1d2330;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+.skip { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip:focus { position: static; width: auto; height: auto; padding: 8px; background: var(--brand); color: var(--brand-ink); }
+.shell { max-width: 1080px; margin: 0 auto; padding: 24px; }
+header.shell { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--stroke); }
+.brand { color: var(--fg); text-decoration: none; font-weight: 700; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 16px; }
+nav a.active { color: var(--fg); }
+nav a.cta { padding: 8px 12px; border: 1px solid var(--stroke); border-radius: 12px; }
+nav a.cta:hover { background: var(--card); }
+.hero { padding: 48px 0; }
+h1 { font-size: 40px; line-height: 1.15; margin: 0 0 12px; }
+h2 { font-size: 28px; margin: 28px 0 8px; }
+h3 { margin: 12px 0 8px; }
+.row { display: flex; align-items: center; }
+.gap > * { margin-right: 12px; }
+.grid.two { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 12px; background: var(--brand); color: var(--brand-ink); text-decoration: none; font-weight: 700; border: none; cursor: pointer; }
+.btn:hover { filter: brightness(1.05); }
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--stroke); }
+.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.cards li { border: 1px solid var(--stroke); border-radius: 16px; padding: 16px; background: var(--card); }
+.form { display: grid; gap: 12px; max-width: 560px; }
+.form.mini { grid-template-columns: 1fr auto; }
+.hp { display: none; }
+label { display: grid; gap: 6px; }
+input, textarea { padding: 10px 12px; background: #0d1218; border: 1px solid var(--stroke); color: var(--fg); border-radius: 10px; outline: none; }
+input:focus, textarea:focus { border-color: #2a3350; }
+.note { color: var(--muted); min-height: 1.2em; }
+.card { border: 1px solid var(--stroke); border-radius: 16px; padding: 16px; background: var(--card); }
+footer { border-top: 1px solid var(--stroke); color: var(--muted); }

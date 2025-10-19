@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS leads (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  message TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  ip TEXT
+);
+
+CREATE TABLE IF NOT EXISTS intakes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  full_name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  goal TEXT NOT NULL,
+  timeline TEXT NOT NULL,
+  details TEXT,
+  created_at TEXT NOT NULL,
+  ip TEXT
+);

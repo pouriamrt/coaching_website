@@ -1,0 +1,23 @@
+name = "coachsite"
+main = "src/entry.py"
+compatibility_date = "2024-03-20"
+compatibility_flags = ["python_workers"]
+
+[assets]
+directory = "public"
+
+[[d1_databases]]
+binding = "COACHING_DB"
+database_name = "coaching_db"
+database_id = "9ecbc8ad-fc37-4465-abee-4761ed008200"
+
+[[kv_namespaces]]
+binding = "COACHING_KV"
+id = "d7b311f729484e8b8226c7ba6df2e6a5"
+
+[vars]
+SITE_NAME = "Coach Mo"
+SITE_TAGLINE = "Clarity. Momentum. Results."
+CONTACT_EMAIL = "pouriamortezaagha7@gmail.com"
+RATE_LIMIT_WINDOW_SECONDS = "600"
+RATE_LIMIT_MAX_REQUESTS = "10"
