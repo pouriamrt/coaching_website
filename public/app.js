@@ -6,12 +6,14 @@ async function postJSON(url, data) {
   });
   return res.json();
 }
+
 function serialize(form) {
   const fd = new FormData(form);
   const out = {};
   for (const [k, v] of fd.entries()) out[k] = v;
   return out;
 }
+
 function wireForm(id, api, msgId) {
   const form = document.getElementById(id);
   const msg = document.getElementById(msgId);
@@ -30,6 +32,7 @@ function wireForm(id, api, msgId) {
     }
   });
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   wireForm("contactForm", "/api/contact", "contactMsg");
   wireForm("intakeForm", "/api/intake", "intakeMsg");

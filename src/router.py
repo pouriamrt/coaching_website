@@ -24,6 +24,10 @@ class Router:
                 return page(self.env, "contact")
             if url.endswith("/intake") or url.endswith("/intake.html"):
                 return page(self.env, "intake")
+            if url.endswith("/privacy") or url.endswith("/privacy.html"):
+                return page(self.env, "privacy")
+            if url.endswith("/terms") or url.endswith("/terms.html"):
+                return page(self.env, "terms")
 
         if method == "POST":
             ip = get_client_ip(request) or "unknown"
